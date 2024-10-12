@@ -3,14 +3,14 @@ return {
   event = 'VimEnter',
   opts = function()
     local logo = [[
-        ⠀        (\__/)
-           	(•ㅅ•)      You are a
-   		 ＿ノヽ ノ＼＿      bad influence
-`/　`/ ⌒Ｙ⌒ Ｙ  ヽ     on my child.
-( 　(三ヽ人　 /　  |
-|　ﾉ⌒＼ ￣￣ヽ   ノ
-ヽ＿＿＿＞､＿_／
-       ｜( 王 ﾉ〈   (\__/)
+        ⠀  	      (\__/)
+        	   	<Space>(•ㅅ•)      You are a
+   			 ＿ノヽ ノ＼＿      bad influence
+	`/　`/ ⌒Ｙ⌒ Ｙ  ヽ     on my child.
+	( 　(三ヽ人　 /　  |
+	|　ﾉ⌒＼ ￣￣ヽ   ノ
+	ヽ＿＿＿＞､＿_／
+    	   ｜( 王 ﾉ〈   (\__/)
        /ﾐ`ー―彡\  (•ㅅ•)
       / ╰    ╯ \ /    \>
     ]]
