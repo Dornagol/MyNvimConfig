@@ -1,12 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("oil").setup()
-require("nordic").setup({
-	transparent = {
-		bg = false,
-		float = false,
-	},
-})
 require("transparent").setup({
 	-- table: default groups
 	groups = {
@@ -25,6 +19,7 @@ require("transparent").setup({
 	on_clear = function() end,
 })
 
+vim.o.guicursor = 'n-v-c-sm-i-ci-ve:block,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
 vim.o.expandtab = false -- Utiliser des tabulations au lieu d'espaces
 vim.o.tabstop = 4       -- Largeur d'une tabulation
 vim.o.shiftwidth = 4    -- Largeur d'une indentation
@@ -32,6 +27,5 @@ vim.o.softtabstop = 4   -- Largeur d'une tabulation lors de l'édition
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.cmd([[
-:colorscheme nordic
 inoremap <F1> <C-P>
 ]])
