@@ -18,6 +18,17 @@ require("transparent").setup({
 	-- Also the user event "TransparentClear" will be triggered
 	on_clear = function() end,
 })
+require("toggleterm").setup {
+	size = 40,
+	open_mapping = [[<c-\>]],
+	shade_terminals = true,
+	direction = "float",
+	float_opts = {
+		border = "curved",
+		width = 120,
+		height = 30,
+	},
+}
 
 vim.o.guicursor = 'n-v-c-sm-i-ci-ve:block,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
 vim.o.expandtab = false -- Utiliser des tabulations au lieu d'espaces
