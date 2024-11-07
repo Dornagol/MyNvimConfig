@@ -29,7 +29,10 @@ require("toggleterm").setup {
 		height = 30,
 	},
 }
-
+require('cmp').setup({
+	enabled = false, -- Désactiver complètement l'autocomplétion
+})
+vim.cmd([[colorscheme gruvbox]])
 vim.o.guicursor = 'n-v-c-sm-i-ci-ve:block,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
 vim.o.expandtab = false -- Utiliser des tabulations au lieu d'espaces
 vim.o.tabstop = 4       -- Largeur d'une tabulation

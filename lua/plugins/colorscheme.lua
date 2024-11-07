@@ -1,7 +1,6 @@
 return {
-	"folke/tokyonight.nvim",
-	lazy = false,
+	"ellisonleao/gruvbox.nvim",
 	priority = 1000,
-	opts = {},
+	config = true,
+	opts = ...
 }
-
