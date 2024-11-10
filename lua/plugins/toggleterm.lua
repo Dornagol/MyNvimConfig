@@ -3,4 +3,3 @@ return {
 	version = "*",
 	config = true
 }
-

@@ -18,17 +18,7 @@ require("transparent").setup({
 	-- Also the user event "TransparentClear" will be triggered
 	on_clear = function() end,
 })
-require("toggleterm").setup {
-	size = 40,
-	open_mapping = [[<c-\>]],
-	shade_terminals = true,
-	direction = "float",
-	float_opts = {
-		border = "curved",
-		width = 120,
-		height = 30,
-	},
-}
+
 require('cmp').setup({
 	enabled = false, -- Désactiver complètement l'autocomplétion
 })
@@ -39,6 +29,8 @@ vim.o.tabstop = 4       -- Largeur d'une tabulation
 vim.o.shiftwidth = 4    -- Largeur d'une indentation
 vim.o.softtabstop = 4   -- Largeur d'une tabulation lors de l'édition
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set('n', '<C-p>', '<Cmd>ToggleTerm<CR>', { silent = true, noremap = true })
+vim.keymap.set('t', '<C-p>', '<Cmd>ToggleTerm<CR>', { silent = true, noremap = true })
 
 vim.cmd([[
 inoremap <F1> <C-P>
