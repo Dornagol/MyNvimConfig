@@ -1,4 +1,5 @@
 {
+  "42-header.nvim": { "branch": "main", "commit": "9e816c72712ac72aa576b18a14a5427578c90ff7" },
   "LuaSnip": { "branch": "master", "commit": "659c4479529a05cc9b05ef762639a09d366cc690" },
   "NvChad": { "branch": "v2.5", "commit": "bbc3d43db088c141b142a40cd5f717635833a54e" },
   "base46": { "branch": "v2.5", "commit": "16ee0e93dfc52e35ee7c9cf45e5ebf116958edb7" },
